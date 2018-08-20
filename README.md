@@ -84,5 +84,16 @@ You can easily start your MEAN stack project with the following command:
 npm start
 
 
+### React Native
+
+npm install -g create-react-native-app
+
+
+create-react-native-app AwesomeProject
+
+cd AwesomeProject
+npm start
+
+
 
 
