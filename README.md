@@ -44,8 +44,44 @@ npm -v
 ln -s /usr/bin/nodejs /usr/bin/node
 
 
+## Install Yarn and Gulp
+#### Yarn is package management tool for client-side programming and it depends on NodeJS and NPM. You can install Yarn with this NPM command:
+npm install -g yarn
+
+#### Gulp is a JavaScript task runner that can automate many tasks, you can install it with NPM command as well:
+npm install -g gulp
+
+#### For verifying that Bower and Gulp are installed successfully you can execute the following command:
+
+npm list -g --depth=0
 
 
+You should see something like below:
+/usr/lib
+├── yarn@1.3.2
+├── gulp@3.9.1
+└── npm@5.3.0
+
+
+#### Download and Install MEAN from GIT
+
+Now we can download the latest version of MEAN which is “0.6.0” at the time of writing.
+Execute the following command:
+
+git clone https://github.com/meanjs/mean.git
+Switch to the MEAN main directory:
+
+cd mean
+Install MEAN with the following command:
+
+npm install
+After the installation process is finished without errors you can execute the command below to install the front-end stuff:
+
+yarn install --allow-root
+Start and Test
+You can easily start your MEAN stack project with the following command:
+
+npm start
 
 
 
